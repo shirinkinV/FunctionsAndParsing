@@ -175,6 +175,8 @@ namespace FunctionsAndParsing
             return ((CommonFunction)Expression());
         }
 
+
+        //Получить выражение в виде графа
         private CommonFunction Expression()
         {
             Sum sum = new Sum();
@@ -263,7 +265,14 @@ namespace FunctionsAndParsing
                 }
                 else
                 {
-                    result = new Variable(variables[name]);
+                    if (variables.ContainsKey(name))
+                        result = new Variable(variables[name]);
+                    else
+                    {
+                        variables[name] = variables.Last().Value + 1;
+                        result = new Variable(variables[name]);
+                    }
+                    ((Variable)result).name = name;
                 }
             }
             else

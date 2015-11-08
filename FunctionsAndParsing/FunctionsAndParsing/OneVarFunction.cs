@@ -25,5 +25,10 @@ namespace FunctionsAndParsing
             else
                 return p => function(0);
         }
+
+        public override Variable search(string name)
+        {
+            return arg.search(name);
+        }
     }
 }

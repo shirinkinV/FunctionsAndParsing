@@ -124,6 +124,8 @@ namespace FunctionsAndParsing
 
         public abstract Func<double[], double> getCommonFunction();
 
+        public abstract Variable search(string name);
+
         public Func<double[], double[]> getFunction()
         {
             return p => new double[] { getCommonFunction()(p) };

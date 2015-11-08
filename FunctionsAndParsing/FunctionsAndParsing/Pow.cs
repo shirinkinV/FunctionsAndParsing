@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
@@ -34,6 +32,23 @@ namespace FunctionsAndParsing
         public override Func<double[], double> getCommonFunction()
         {
             return p => compute(p);
+        }
+
+        public override Variable search(string name)
+        {
+            Variable result = null;
+            for(int i = 0; i < baseAndPower.Count; i++)
+            {
+                if (result == null)
+                {
+                    result = baseAndPower.ElementAt(i).search(name);
+                }
+                else
+                {
+                    return result;
+                }
+            }
+            return result;
         }
     }
 }

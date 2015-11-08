@@ -44,5 +44,23 @@ namespace FunctionsAndParsing
         {
             return func;
         }
+
+        public override Variable search(string name)
+        {
+            Variable result = null;
+
+            for (int i = 0; i < operands.Count; i++)
+            {
+                if (result == null)
+                {
+                    result = operands.ElementAt(i).search(name);
+                }
+                else
+                {
+                    return result;
+                }
+            }
+            return result;
+        }
     }
 }

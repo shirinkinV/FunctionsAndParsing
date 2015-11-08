@@ -9,5 +9,6 @@ namespace FunctionsAndParsing
     public interface Function
     {
         Func<double[], double[]> getFunction();
+        Variable search(string name);
     }
 }

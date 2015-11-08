@@ -29,5 +29,23 @@ namespace FunctionsAndParsing
         {
             return p => length(arg.getFunction()(p));
         }
+
+        public override Variable search(string name)
+        {
+            Variable result = null;
+            if (arg != null)
+                for (int i = 0; i < arg.components.Count; i++)
+                {
+                    if (result == null)
+                    {
+                        result = arg.components.ElementAt(i).search(name);
+                    }
+                    else
+                    {
+                        return result;
+                    }
+                }
+            return result;
+        }
     }
 }

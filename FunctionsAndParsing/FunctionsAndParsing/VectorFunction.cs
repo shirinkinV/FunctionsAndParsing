@@ -42,5 +42,22 @@ namespace FunctionsAndParsing
         {
             return func;
         }
+
+        public Variable search(string name)
+        {
+            Variable result = null;
+            for(int i = 0; i < components.Count; i++)
+            {
+                if (result == null)
+                {
+                    result = components.ElementAt(i).search(name);
+                }
+                else
+                {
+                    return result;
+                }
+            }
+            return result;
+        }
     }
 }

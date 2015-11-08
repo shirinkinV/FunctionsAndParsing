@@ -19,5 +19,10 @@ namespace FunctionsAndParsing
         {
             return function;
         }
+
+        public override Variable search(string name)
+        {
+            return null;
+        }
     }
 }
