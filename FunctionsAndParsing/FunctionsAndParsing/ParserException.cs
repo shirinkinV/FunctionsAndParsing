@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class ParserException : Exception
+    public class ParserException : Exception
     {
         public ParserException(string message)
             : base(message)

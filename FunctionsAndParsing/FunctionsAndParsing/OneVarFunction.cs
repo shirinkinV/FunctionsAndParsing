@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class OneVarFunction : CommonFunction
+    public class OneVarFunction : CommonFunction
     {
         public CommonFunction arg;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Mul : CommonFunction
+    public class Mul : CommonFunction
     {
         public List<CommonFunction> operands;
         public List<bool> powers;

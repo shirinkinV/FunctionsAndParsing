@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Curve : VectorFunction
+    public class Curve : VectorFunction
     {
         public Curve(List<CommonFunction> trajectory) : base(trajectory) { }
 

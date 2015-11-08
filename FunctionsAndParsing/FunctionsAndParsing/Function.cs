@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    interface Function
+    public interface Function
     {
         Func<double[], double[]> getFunction();
     }

@@ -7,7 +7,7 @@ using MathNet.Numerics.Differentiation;
 
 namespace FunctionsAndParsing
 {
-    class Surface
+    public class Surface
     {
         private VectorFunction r, normal;
 

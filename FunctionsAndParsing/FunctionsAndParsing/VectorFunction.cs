@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class VectorFunction : Function
+    public class VectorFunction : Function
     {
         public readonly List<CommonFunction> components = new List<CommonFunction>();
 

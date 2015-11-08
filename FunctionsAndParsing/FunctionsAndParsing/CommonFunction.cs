@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    abstract class CommonFunction : Function
+    public abstract class CommonFunction : Function
     {
         public static CommonFunction operator +(CommonFunction f1, CommonFunction f2)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Length : CommonFunction
+    public class Length : CommonFunction
     {
         private VectorFunction arg;
 

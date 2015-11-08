@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace FunctionsAndParsing
 {
-    class Parser
+    public class Parser
     {
         private string expression;
         private int position;

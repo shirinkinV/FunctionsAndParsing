@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Pow : CommonFunction
+    public class Pow : CommonFunction
     {
         public List<CommonFunction> baseAndPower;
 

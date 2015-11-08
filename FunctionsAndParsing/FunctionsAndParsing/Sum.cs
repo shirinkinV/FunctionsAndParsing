@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Sum : CommonFunction
+    public class Sum : CommonFunction
     {
         public List<CommonFunction> operands;
         public List<bool> signs;

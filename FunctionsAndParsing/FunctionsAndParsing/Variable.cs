@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Variable : CommonFunction
+    public class Variable : CommonFunction
     {
         public int index;
 

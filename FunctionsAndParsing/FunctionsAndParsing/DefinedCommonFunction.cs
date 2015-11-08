@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class DefinedCommonFunction : CommonFunction
+    public class DefinedCommonFunction : CommonFunction
     {
         protected Func<double[], double> function;
 

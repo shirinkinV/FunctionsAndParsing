@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionsAndParsing
 {
-    class Vector3Mul : VectorFunction
+    public class Vector3Mul : VectorFunction
     {
         public Vector3Mul(VectorFunction v1, VectorFunction v2)
             : base(new List<CommonFunction>())
